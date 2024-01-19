@@ -9,10 +9,8 @@ services:
     working_dir: /app
     ports:
       - "8000:8000"
-      - "9229:9229"
     command: npm run dev
     volumes:
       - ./src:/app/src
-      - ./nodemon.json:/app/nodemon.json
     environment:
       PORT: 8000

@@ -2,8 +2,8 @@ FROM node:20 as base
 
 WORKDIR /app
 
-COPY . .
+COPY package.json package-lock.json /app
 
 RUN npm i
 
-RUN npm run build
+COPY . /app

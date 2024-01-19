@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
-    "start": "NODE_PATH=./built node built/index.js",
-    "dev": "nodemon src/index.ts"
+    "start": "node built/index.js",
+    "dev": "nodemon -L src/index.ts"
   },
   "keywords": [],
   "author": "",
